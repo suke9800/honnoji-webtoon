@@ -203,3 +203,19 @@ button { font: inherit; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+/* Historical webtoon catalogue and Red Cliffs reader */
+.works-section { padding-top: 72px; padding-bottom: 72px; }
+.works-list { display: grid; gap: 24px; }
+.red-cliffs-thumb img { object-position: center 24%; }
+.red-cliffs-reader .comic { max-width: 860px; }
+.red-cliffs-reader .comic > a { display: block; }
+.red-cliffs-reader .reader-intro h1 { max-width: 100%; word-break: keep-all; }
+.part-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 860px; margin: 0 auto; padding: 0 20px 32px; }
+.part-nav a { padding: 5px 9px; border: 1px solid var(--line); color: var(--muted); text-decoration: none; font-size: .78rem; }
+.part-nav a:hover { color: var(--gold); border-color: var(--gold); }
+@media (max-width: 760px) { .works-section { padding-top: 46px; padding-bottom: 46px; } .red-cliffs-reader .reader-heading strong { display: block; max-width: 245px; font-size: .75rem; line-height: 1.4; } }
+
+.works-list .episode-card { min-height: 320px; }
+.works-list .episode-thumb { height: 320px; }
+@media (max-width: 480px) { .works-list .episode-thumb { height: 190px; } }
